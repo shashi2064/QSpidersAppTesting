@@ -1,112 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Suite configuration started]]>
-    </line>
-    <line>
-      <![CDATA[ContactcreationTest started]]>
-    </line>
-    <line>
-      <![CDATA[ContactcreationTest success]]>
-    </line>
-    <line>
-      <![CDATA[CreateContactselectingSupportDateTest started]]>
-    </line>
-    <line>
-      <![CDATA[CreateContactselectingSupportDateTest success]]>
-    </line>
-    <line>
-      <![CDATA[CreateContactwithOrganizationNameTest started]]>
-    </line>
-    <line>
-      <![CDATA[CreateContactwithOrganizationNameTest success]]>
-    </line>
   </reporter-output>
-  <suite started-at="2024-12-16T10:45:08 IST" name="Listners" finished-at="2024-12-16T10:46:40 IST" duration-ms="91853">
+  <suite started-at="2024-12-17T10:14:31 IST" name="Default suite" finished-at="2024-12-17T10:14:46 IST" duration-ms="14483">
     <groups>
     </groups>
-    <test started-at="2024-12-16T10:45:08 IST" name="Listners" finished-at="2024-12-16T10:46:40 IST" duration-ms="91853">
-      <class name="Contactcreation_GenericUtility.V_tiger_ContactCreationAllScenarios">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Contactcreation_GenericUtility.V_tiger_ContactCreationAllScenarios@740cae06]" started-at="2024-12-16T10:45:08 IST" name="beforeSuite" finished-at="2024-12-16T10:45:08 IST" duration-ms="14" status="PASS">
+    <test started-at="2024-12-17T10:14:31 IST" name="Default test" finished-at="2024-12-17T10:14:46 IST" duration-ms="14483">
+      <class name="CreateOrganisation_GenericUtility.CreateOrganisation">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:CreateOrganisation_GenericUtility.CreateOrganisation@2a7f1f10]" started-at="2024-12-17T10:14:31 IST" name="beforeSuite" finished-at="2024-12-17T10:14:31 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Contactcreation_GenericUtility.V_tiger_ContactCreationAllScenarios@740cae06]" started-at="2024-12-16T10:45:08 IST" name="beforeTest" finished-at="2024-12-16T10:45:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:CreateOrganisation_GenericUtility.CreateOrganisation@2a7f1f10]" started-at="2024-12-17T10:14:31 IST" name="beforeTest" finished-at="2024-12-17T10:14:31 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Contactcreation_GenericUtility.V_tiger_ContactCreationAllScenarios@740cae06]" started-at="2024-12-16T10:45:08 IST" name="beforeClass" finished-at="2024-12-16T10:45:11 IST" duration-ms="3202" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:CreateOrganisation_GenericUtility.CreateOrganisation@2a7f1f10]" started-at="2024-12-17T10:14:32 IST" name="beforeClass" finished-at="2024-12-17T10:14:34 IST" duration-ms="2677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Contactcreation_GenericUtility.V_tiger_ContactCreationAllScenarios@740cae06]" started-at="2024-12-16T10:45:11 IST" name="beforeMethod" finished-at="2024-12-16T10:45:15 IST" duration-ms="4211" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:CreateOrganisation_GenericUtility.CreateOrganisation@2a7f1f10]" started-at="2024-12-17T10:14:34 IST" name="beforeMethod" finished-at="2024-12-17T10:14:36 IST" duration-ms="2306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="Contactcreation()[pri:0, instance:Contactcreation_GenericUtility.V_tiger_ContactCreationAllScenarios@740cae06]" started-at="2024-12-16T10:45:16 IST" name="Contactcreation" finished-at="2024-12-16T10:45:37 IST" duration-ms="21009" status="PASS">
+        <test-method signature="Organisationcreation()[pri:0, instance:CreateOrganisation_GenericUtility.CreateOrganisation@2a7f1f10]" started-at="2024-12-17T10:14:36 IST" name="Organisationcreation" finished-at="2024-12-17T10:14:45 IST" duration-ms="8402" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[ContactcreationTest started]]>
-            </line>
-            <line>
-              <![CDATA[ContactcreationTest success]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- Contactcreation -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Contactcreation_GenericUtility.V_tiger_ContactCreationAllScenarios@740cae06]" started-at="2024-12-16T10:45:37 IST" name="afterMethod" finished-at="2024-12-16T10:45:38 IST" duration-ms="1649" status="PASS">
+        </test-method> <!-- Organisationcreation -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:CreateOrganisation_GenericUtility.CreateOrganisation@2a7f1f10]" started-at="2024-12-17T10:14:45 IST" name="afterMethod" finished-at="2024-12-17T10:14:46 IST" duration-ms="854" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Contactcreation_GenericUtility.V_tiger_ContactCreationAllScenarios@740cae06]" started-at="2024-12-16T10:45:38 IST" name="beforeMethod" finished-at="2024-12-16T10:45:42 IST" duration-ms="3712" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="CreateContactselectingSupportDate()[pri:0, instance:Contactcreation_GenericUtility.V_tiger_ContactCreationAllScenarios@740cae06]" started-at="2024-12-16T10:45:42 IST" name="CreateContactselectingSupportDate" finished-at="2024-12-16T10:45:58 IST" duration-ms="16536" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[CreateContactselectingSupportDateTest started]]>
-            </line>
-            <line>
-              <![CDATA[CreateContactselectingSupportDateTest success]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- CreateContactselectingSupportDate -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Contactcreation_GenericUtility.V_tiger_ContactCreationAllScenarios@740cae06]" started-at="2024-12-16T10:45:58 IST" name="afterMethod" finished-at="2024-12-16T10:46:00 IST" duration-ms="1686" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Contactcreation_GenericUtility.V_tiger_ContactCreationAllScenarios@740cae06]" started-at="2024-12-16T10:46:00 IST" name="beforeMethod" finished-at="2024-12-16T10:46:04 IST" duration-ms="3822" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="CreateContactwithOrganizationName()[pri:0, instance:Contactcreation_GenericUtility.V_tiger_ContactCreationAllScenarios@740cae06]" started-at="2024-12-16T10:46:04 IST" name="CreateContactwithOrganizationName" finished-at="2024-12-16T10:46:38 IST" duration-ms="33677" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[CreateContactwithOrganizationNameTest started]]>
-            </line>
-            <line>
-              <![CDATA[CreateContactwithOrganizationNameTest success]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- CreateContactwithOrganizationName -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Contactcreation_GenericUtility.V_tiger_ContactCreationAllScenarios@740cae06]" started-at="2024-12-16T10:46:38 IST" name="afterMethod" finished-at="2024-12-16T10:46:39 IST" duration-ms="1752" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:Contactcreation_GenericUtility.V_tiger_ContactCreationAllScenarios@740cae06]" started-at="2024-12-16T10:46:39 IST" name="afterClass" finished-at="2024-12-16T10:46:40 IST" duration-ms="542" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:CreateOrganisation_GenericUtility.CreateOrganisation@2a7f1f10]" started-at="2024-12-17T10:14:46 IST" name="afterClass" finished-at="2024-12-17T10:14:46 IST" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Contactcreation_GenericUtility.V_tiger_ContactCreationAllScenarios@740cae06]" started-at="2024-12-16T10:46:40 IST" name="afterTest" finished-at="2024-12-16T10:46:40 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:CreateOrganisation_GenericUtility.CreateOrganisation@2a7f1f10]" started-at="2024-12-17T10:14:46 IST" name="afterTest" finished-at="2024-12-17T10:14:46 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Contactcreation_GenericUtility.V_tiger_ContactCreationAllScenarios@740cae06]" started-at="2024-12-16T10:46:40 IST" name="afterSuite" finished-at="2024-12-16T10:46:40 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:CreateOrganisation_GenericUtility.CreateOrganisation@2a7f1f10]" started-at="2024-12-17T10:14:46 IST" name="afterSuite" finished-at="2024-12-17T10:14:46 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- Contactcreation_GenericUtility.V_tiger_ContactCreationAllScenarios -->
-    </test> <!-- Listners -->
-  </suite> <!-- Listners -->
+      </class> <!-- CreateOrganisation_GenericUtility.CreateOrganisation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
