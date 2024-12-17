@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.Vtiger_GenericUtility.FetchExcelfile;
@@ -76,17 +77,11 @@ public class CreateOrganisation extends BaseClass {
 
 			String validate_success = OIP.getvalidate_success();
 
+			boolean actresult = validate_success.contains(Orgname);
+
 			System.out.println(validate_success);
-
-			if (validate_success.contains(Orgname)) {
-
-				System.out.println("Test case passed");
-
-			}
-
-			else {
-				System.out.println("Test case failed");
-			}
+			
+			Assert.assertEquals(actresult, true);
 
 			OIP.getClick_org();
 
