@@ -80,7 +80,7 @@ public class CreateOrganisation extends BaseClass {
 			boolean actresult = validate_success.contains(Orgname);
 
 			System.out.println(validate_success);
-			
+
 			Assert.assertEquals(actresult, true);
 
 			OIP.getClick_org();
@@ -88,15 +88,19 @@ public class CreateOrganisation extends BaseClass {
 			String index_validate = driver
 					.findElement(By.xpath("//a[@title='Organizations'][text()='" + Orgname + "']")).getText();
 
-			if (index_validate.contains(Orgname)) {
+			boolean actorgresult = index_validate.contains(Orgname);
 
-				System.out.println("Test case passed");
+			Assert.assertEquals(actorgresult, true);
 
-			}
-
-			else {
-				System.out.println("Test case failed");
-			}
+//			if (index_validate.contains(Orgname)) {
+//
+//				System.out.println("Test case passed");
+//
+//			}
+//
+//			else {
+//				System.out.println("Test case failed");
+//			}
 
 		}
 
