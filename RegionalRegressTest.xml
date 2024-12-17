@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+	<!-- when we want to execute specific scenario  Go with the Regional
+	Regression test-->
+
+
+	<test thread-count="2" name="Test1">
+		<classes>
+			<class
+				name="CreateOrganisation_GenericUtility.V_tiger_CreateorganisationAllScenarios">
+				<methods>
+					<include name="CreateOrganisationwithindustrytype"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test thread-count="2" name="Test2">
+		<classes>
+			<class
+				name="Contactcreation_GenericUtility.V_tiger_ContactCreationAllScenarios">
+				<methods>
+					<include name="Contactcreation"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+</suite> <!--
+Suite -->
