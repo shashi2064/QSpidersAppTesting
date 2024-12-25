@@ -3,6 +3,8 @@ package Contactcreation_GenericUtility;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,6 +16,11 @@ import org.testng.annotations.Test;
 import com.Vtiger_GenericUtility.FetchExcelfile;
 import com.Vtiger_GenericUtility.FetchPropertyfile;
 import com.Vtiger_GenericUtility.webdriverUtilitys;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import BaseClass.BaseClass;
 import POMPages.ContactInformationPage;
@@ -25,6 +32,32 @@ public class Contactcreation extends BaseClass {
 
 	@Test
 	public void Contactcreation() throws Exception {
+
+		// Configure reports
+		ExtentSparkReporter spark = new ExtentSparkReporter("./AdvancedReports/LLReports.html");
+
+		spark.config().setReportName("CreateContact");
+
+		spark.config().setDocumentTitle("VtigerReport");
+
+		spark.config().setTheme(Theme.STANDARD);
+
+		// Add configuration for Reports
+		ExtentReports report = new ExtentReports();
+
+		report.attachReporter(spark);
+
+		report.setSystemInfo("OS", "Windows 11");
+
+		report.setSystemInfo("Browser", "131");
+
+		// Creating test
+		ExtentTest test = report.createTest("CreateContactTest");
+
+		test.log(Status.INFO, "Createcontact");
+
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		String src = ts.getScreenshotAs(OutputType.BASE64);
 
 		FetchPropertyfile property = new FetchPropertyfile();
 
@@ -58,13 +91,12 @@ public class Contactcreation extends BaseClass {
 
 		System.out.println(fetchlstname);
 
-		if (fetchlstname.contains(con)) {
+		if (fetchlstname.equals(con + "123")) {
 
 			System.out.println("Give text matched with the success message");
 
 		} else {
-			System.out.println("Text has not matched");
-
+			test.addScreenCaptureFromBase64String(src, "error");
 		}
 
 		Thread.sleep(3000);
@@ -87,6 +119,9 @@ public class Contactcreation extends BaseClass {
 		}
 
 		wb.Takescreenshot(driver, "D:\\Qspider Classes.png");
+
+		// backup
+		report.flush();
 
 	}
 

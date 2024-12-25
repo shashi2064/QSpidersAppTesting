@@ -14,14 +14,41 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
 import BaseClass.BaseClass;
 
 public class listerners implements ITestListener, ISuiteListener {
+
 	public WebDriver driver;
 
 	@Override
 	public void onStart(ISuite suite) {
 		Reporter.log("Suite configuration started", true);
+
+		// Configure reports
+		ExtentSparkReporter spark = new ExtentSparkReporter("./AdvancedReports/LLReports.html");
+
+		spark.config().setReportName("CreateContact");
+
+		spark.config().setDocumentTitle("VtigerReport");
+
+		spark.config().setTheme(Theme.STANDARD);
+
+		// Add configuration for Reports
+		ExtentReports report = new ExtentReports();
+
+		report.attachReporter(spark);
+
+		report.setSystemInfo("OS", "Windows 11");
+
+		report.setSystemInfo("Browser", "131");
+
+		// Creating test
+		ExtentTest test = report.createTest("CreateContactTest");
 	}
 
 	@Override
