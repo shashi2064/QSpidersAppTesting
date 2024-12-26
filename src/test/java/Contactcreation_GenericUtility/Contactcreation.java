@@ -29,11 +29,12 @@ import POMPages.CreateNewContact;
 import POMPages.LoginPage;
 
 public class Contactcreation extends BaseClass {
+	//test333
 
 	@Test
 	public void Contactcreation() throws Exception {
 
-		// Configure reports
+		// Configure reports === test
 		ExtentSparkReporter spark = new ExtentSparkReporter("./AdvancedReports/LLReports.html");
 
 		spark.config().setReportName("CreateContact");
