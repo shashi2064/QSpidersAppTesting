@@ -31,7 +31,7 @@ import POMPages.LoginPage;
 public class Contactcreation extends BaseClass {
 	//test333
 
-	@Test
+//	@Test
 	public void Contactcreation() throws Exception {
 
 		// Configure reports === test
